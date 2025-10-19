@@ -1,70 +1,285 @@
-# Getting Started with Create React App
+# OZ Design Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application for OZ Design - a professional design and development company with offices across Australia.
 
-## Available Scripts
+## 🌟 Overview
 
-In the project directory, you can run:
+This is a full-stack web application showcasing OZ Design's services, portfolio, and contact information. The website features beautiful animations, modern UI/UX design, and a fully functional contact form system.
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: [Coming Soon]
+- **Backend API**: [Coming Soon]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎨 Features
 
-### `npm test`
+### Frontend
+- ✨ **Modern UI/UX**: Clean, professional design with purple gradient theme
+- 🎭 **Smooth Animations**: Framer Motion powered transitions and parallax effects
+- 📱 **Fully Responsive**: Optimized for mobile, tablet, and desktop devices
+- 🎯 **Interactive Components**: 
+  - 3D flip service cards
+  - Animated design principles tags
+  - Glassmorphism navbar with scroll effects
+  - Multi-column footer with social links
+- 🌐 **Multi-Page Navigation**:
+  - Home: Company overview and services
+  - About: Company history and values
+  - Contact: Multi-location information and contact form
+  - Book Online: Service booking interface
+  - FAQ: Comprehensive Q&A section
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- 📧 **Contact Form API**: Express.js powered email handling
+- 🔐 **Secure**: Environment variable configuration
+- 📨 **Email Integration**: Resend API for reliable email delivery
+- 🚀 **Vercel Ready**: Configured for serverless deployment
 
-### `npm run build`
+## 🛠️ Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
+- **Framework**: React 18.3.1
+- **Routing**: React Router DOM 6.28.0
+- **UI Library**: React Bootstrap 2.10.6
+- **Animations**: Framer Motion 11.13.5
+- **Styling**: CSS3 with custom designs
+- **Build Tool**: Create React App
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
+- **Runtime**: Node.js
+- **Framework**: Express.js 4.21.2
+- **Email Service**: Resend 4.0.1
+- **Middleware**: 
+  - CORS for cross-origin requests
+  - Body Parser for JSON handling
+  - Express Validator for input validation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Project Structure
 
-### `npm run eject`
+```
+oz-design/
+├── frontend/                 # React frontend application
+│   ├── public/              # Static assets
+│   │   ├── OZLogo.png      # Company logo
+│   │   └── index.html      # HTML template
+│   ├── src/
+│   │   ├── components/      # Reusable components
+│   │   │   ├── Header.js   # Navigation bar
+│   │   │   ├── Footer.js   # Footer with locations
+│   │   │   ├── ServiceCard.js      # 3D flip cards
+│   │   │   └── DesignPrinciples.js # Tag grid
+│   │   ├── pages/           # Page components
+│   │   │   ├── Home.js
+│   │   │   ├── About.js
+│   │   │   ├── Contact.js
+│   │   │   ├── BookOnline.js
+│   │   │   └── FAQ.js
+│   │   ├── assets/          # Images and resources
+│   │   ├── App.js           # Main app component
+│   │   └── index.js         # Entry point
+│   └── package.json
+├── backend/                  # Express backend API
+│   ├── api/
+│   │   └── contact.js       # Contact form handler
+│   ├── index.js             # Server entry point
+│   ├── vercel.json          # Vercel configuration
+│   └── package.json
+├── .gitignore
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the repository**
+```bash
+git clone https://github.com/rrroy5640/oz-design.git
+cd oz-design
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Install Frontend Dependencies**
+```bash
+cd frontend
+npm install
+```
 
-### Code Splitting
+3. **Install Backend Dependencies**
+```bash
+cd ../backend
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Configure Environment Variables**
 
-### Analyzing the Bundle Size
+Create a `.env` file in the `backend` directory:
+```env
+RESEND_API_KEY=your_resend_api_key_here
+PORT=5000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Running the Application
 
-### Making a Progressive Web App
+#### Development Mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Frontend** (runs on http://localhost:3000):
+```bash
+cd frontend
+npm start
+```
 
-### Advanced Configuration
+**Backend** (runs on http://localhost:5000):
+```bash
+cd backend
+node index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Production Build
 
-### Deployment
+**Frontend**:
+```bash
+cd frontend
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The optimized production build will be in the `frontend/build` folder.
 
-### `npm run build` fails to minify
+## 📍 Office Locations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+OZ Design has offices in four major Australian cities:
+
+- **Sydney**: Level 6, 8 Help Street, Chatswood NSW 2067
+- **Melbourne**: Level 8, 699 Collins Street, Docklands VIC 3008
+- **Brisbane**: Level 1, 7 Clunies Ross Court, Eight Miles Plains QLD 4113
+- **Hobart**: Level 5, 24 Davey Street, Hobart TAS 7000
+
+## 🎯 Key Features Showcase
+
+### Design Principles
+The home page features an interactive tag grid showcasing our core design principles:
+- User-Centric Design
+- Responsive Layouts
+- Clean Code
+- Performance Optimization
+- Accessibility First
+- And more...
+
+### Service Cards
+Interactive 3D flip cards displaying our services:
+- **Branding**: Logo design, brand identity, style guides
+- **Web Development**: Full-stack solutions, responsive design, SEO
+- **Visual Communication**: Graphic design, marketing materials
+- **Motion Design**: Animations, video editing, motion graphics
+
+### Smooth Animations
+- Parallax scrolling effects
+- Fade-in animations on scroll
+- Hover effects and transitions
+- Glassmorphism navbar with backdrop blur
+- Stagger children animations
+
+## 🚢 Deployment
+
+### Frontend (Vercel/Netlify)
+
+**Vercel**:
+```bash
+cd frontend
+npm run build
+vercel --prod
+```
+
+**Netlify**:
+```bash
+cd frontend
+npm run build
+# Then drag the build folder to Netlify
+```
+
+### Backend (Vercel Serverless)
+
+The backend is configured for Vercel serverless deployment with `vercel.json`:
+```bash
+cd backend
+vercel --prod
+```
+
+## 🔧 Configuration
+
+### API Endpoints
+
+**Contact Form**:
+- **Endpoint**: `POST /api/contact`
+- **Body**:
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "0412345678",
+  "subject": "Service Inquiry",
+  "message": "Your message here"
+}
+```
+
+## 📱 Responsive Design
+
+The website is fully responsive with breakpoints:
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🎨 Design System
+
+### Colors
+- **Primary Purple**: `#6A1B9A` to `#5C6BC0` (gradient)
+- **Background**: `#0A0118` (dark) to `#FFFFFF` (light)
+- **Accent**: Purple gradients throughout
+
+### Typography
+- **Headings**: System fonts with gradient effects
+- **Body**: Clean, readable sans-serif
+- **Sizes**: Fluid typography with `clamp()`
+
+### Animations
+- **Transition Duration**: 0.3s - 0.6s
+- **Easing**: Custom cubic-bezier curves
+- **Parallax**: Scroll-based transforms
+- **Hover Effects**: Scale and shadow changes
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is proprietary and confidential. © 2025 OZ Design. All rights reserved.
+
+## 📞 Contact
+
+- **Website**: [Coming Soon]
+- **Email**: [Contact through website form]
+- **Phone**: [Multiple office locations]
+
+## 🙏 Acknowledgments
+
+- React Bootstrap for UI components
+- Framer Motion for animations
+- Resend for email services
+- Create React App for project setup
+
+---
+
+Built with ❤️ by OZ Design Team
