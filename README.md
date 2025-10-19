@@ -6,10 +6,14 @@ A modern, responsive web application for OZ Design - a professional design and d
 
 This is a full-stack web application showcasing OZ Design's services, portfolio, and contact information. The website features beautiful animations, modern UI/UX design, and a fully functional contact form system.
 
-## 🚀 Live Demo
+## ⚠️ Internal Project Notice
 
-- **Frontend**: [Coming Soon]
-- **Backend API**: [Coming Soon]
+**This is an internal OZ Design project. Access is restricted to authorized personnel only.**
+
+Please ensure:
+- Repository is set to **PRIVATE** on GitHub
+- Do not share credentials or API keys
+- Follow company security guidelines
 
 ## 🎨 Features
 
@@ -230,6 +234,15 @@ cd backend
 vercel --prod
 ```
 
+## 🔒 Security Notes
+
+**Important Security Practices:**
+
+1. **Never commit `.env` files** - Already in `.gitignore`
+2. **Protect API Keys** - Use environment variables only
+3. **Review Code** - All changes require team review
+4. **Keep Dependencies Updated** - Run `npm audit` regularly
+
 ## 🔧 Configuration
 
 ### API Endpoints
@@ -280,17 +293,26 @@ The website is fully responsive with breakpoints:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+**For Internal Team Members Only**
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Create a feature branch (`git checkout -b feature/FeatureName`)
+2. Commit your changes (`git commit -m 'Add FeatureName'`)
+3. Push to the branch (`git push origin feature/FeatureName`)
+4. Create a Pull Request for team review
+5. Ensure code review approval before merging
 
-## 📝 License
+## 📝 License & Confidentiality
 
-This project is proprietary and confidential. © 2025 OZ Design. All rights reserved.
+**CONFIDENTIAL - INTERNAL USE ONLY**
+
+This project and all associated code, designs, and documentation are the proprietary and confidential property of OZ Design. 
+
+- ❌ No external distribution permitted
+- ❌ No public deployment without authorization
+- ❌ No sharing of credentials or API keys
+- ✅ Internal use by authorized team members only
+
+© 2025 OZ Design. All rights reserved.
 
 ## 📞 Contact
 
